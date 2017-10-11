@@ -48,7 +48,7 @@ run {
   args = ['run', mainVerticleName,
           "--launcher-class=$mainClassName",
           "--redeploy=src/**/*.*",
-          "--on-redeploy=./gradlew classes"
+          "--on-redeploy=gradle classes"
   ]
 }
 
@@ -63,10 +63,6 @@ shadowJar {
   mergeServiceFiles {
     include 'META-INF/services/io.vertx.core.spi.VerticleFactory'
   }
-}
-
-task wrapper(type: Wrapper) {
-  gradleVersion = '2.13'
 }
 
 // Heroku relies on the 'stage' task to deploy.
