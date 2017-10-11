@@ -48,7 +48,7 @@ run {
   args = ['run', mainVerticleName,
           "--launcher-class=$mainClassName",
           "--redeploy=src/**/*.*",
-          "--on-redeploy=gradle classes"
+          "--on-redeploy=gradle shadowJar"
   ]
 }
 

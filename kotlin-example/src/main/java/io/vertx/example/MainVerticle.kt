@@ -35,7 +35,7 @@ class MainVerticle : AbstractVerticle() {
     // Handlers
 
     val handlerRoot = Handler<RoutingContext> { req ->
-        req.response().end("Welcome! +9")
+        req.response().end("Welcome! +110")
     }
 
     val handlerIslands = Handler<RoutingContext> { req ->
